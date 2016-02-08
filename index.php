@@ -56,7 +56,9 @@ include_once 'inc/inc.header.php';
                     <td><?php echo $user['phone']; ?></td>
                     <td><?php echo $user['email']; ?></td>
                     <td>
-                        <a class="btn btn-info btn-sm" href="edit.php?edit_id=<?php print($user['id']); ?>">Edit Form</a>                        
+                        <a class="btn btn-info btn-sm" href="edit.php?edit_id=<?php print($user['id']); ?>">Edit</a>                        
+                        <a class="btn btn-warning btn-sm" href="view.php?view_id=<?php print($user['id']); ?>">View</a>                        
+                        <a class="btn btn-danger btn-sm" href="delete.php?delete_id=<?php print($user['id']); ?>" onClick="return confirm('are you sure you want to delete?');">Delete</a>                        
                     </td>
                 </tr>
             <?php endforeach; ?>

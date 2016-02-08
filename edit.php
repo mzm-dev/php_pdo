@@ -30,7 +30,7 @@ include_once 'inc/inc.header.php';
 <div class="row appgen">
     <?php
     /* Get all value of POST */
-    if (isset($_POST['btn-update'])) {
+    if (isset($_POST['btn-update']) && $_POST['btn-update'] == "btn-update") {
         $id = $_GET['edit_id'];
         $fname = $_POST['fname'];
         $femail = $_POST['femail'];
@@ -39,14 +39,14 @@ include_once 'inc/inc.header.php';
         if ($crud->update($id, $fname, $femail, $fphone)) {
             echo '<div class="alert alert-info">The user has been updated. <a href="index.php"><strong>HOME</strong></a>!</div>';
         } else {
-            echo '<div class="alert alert-warning">The bookmark could not be saved. Please, try again.</div>';
+            echo '<div class="alert alert-warning">The user could not be saved. Please, try again. <a href="index.php"><strong>HOME</strong></a>!</div>';
         }
     }
 
     /* Get edit_id value */
-    if (isset($_GET['edit_id'])) {
+    if (isset($_GET['edit_id']) && is_numeric($_GET['edit_id'])) {
         $id = $_GET['edit_id'];
-        extract($crud->get_data($id));
+        extract($crud->read($id));
     }
     ?>
     <h3 class="text-center"><?php echo 'Update Record' ?></h3>

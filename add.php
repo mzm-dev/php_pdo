@@ -30,7 +30,7 @@ include_once 'inc/inc.header.php';
 <div class="row appgen">
     <?php
     /* Get all value of POST */
-    if (isset($_POST['btn-save'])) {
+    if (isset($_POST['btn-save']) && $_POST['btn-save'] == "btn-save") {
         $fname = $_POST['fname'];
         $femail = $_POST['femail'];
         $fphone = $_POST['fphone'];
@@ -42,10 +42,12 @@ include_once 'inc/inc.header.php';
         }
     }
 
-    if (isset($_GET['inserted'])) {
+    if (isset($_GET['inserted']) && $_GET['inserted'] == "inserted") {
         echo '<div class="alert alert-info">The user has been saved. <a href="index.php"><strong>HOME</strong></a>!</div>';
-    } else if (isset($_GET['failure'])) {
-        echo '<div class="alert alert-warning">The bookmark could not be saved. Please, try again.</div>';
+    } else if (isset($_GET['failure']) && $_GET['failure'] == "failure") {
+        echo '<div class="alert alert-warning">The user could not be saved. Please, try again.  <a href="index.php"><strong>HOME</strong></a>!</div>';
+    } else {
+        echo '<div class="alert alert-danger">Invalid Input. Please, try again.  <a href="index.php"><strong>HOME</strong></a>!</div>';
     }
     ?>
     <h3 class="text-center"><?php echo 'New Record' ?></h3>

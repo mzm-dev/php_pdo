@@ -43,7 +43,7 @@
                     </ul>
                 </nav>
                 <!-- /.nav -->
-                <h3 class="text-muted">Project name</h3>
+                <h3 class="text-muted">PHP PDO CRUD Tutorial</h3>
             </div>
             <!-- /.header -->
 

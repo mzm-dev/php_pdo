@@ -49,30 +49,6 @@ class Crud {
     }
 
     /**
-     * Get Selected Data by @param
-     * Function get the records from database table.
-     * @param type $id
-     * @return boolean
-     * @url http://php.net/manual/en/pdostatement.fetch.php
-     */
-    //public function get_data($prepare, $execute = array()) {
-    public function get_data($id = null) {
-        if ($id) {
-            $stmt = $this->db->prepare("SELECT * FROM users WHERE id=:id");
-            $stmt->execute(array(":id" => $id));
-            /* if result execute not empty */
-            if ($stmt->rowCount() > 0) {
-                $result = $stmt->fetch(PDO::FETCH_ASSOC);
-                return $result;
-            } else {
-                return FALSE;
-            }
-        } else {
-            
-        }
-    }
-
-    /**
      * Save Function
      * Functions are in try/catch block to handle exceptions.
      * @param type $fname
@@ -93,6 +69,29 @@ class Crud {
         } catch (PDOException $e) {
             echo $e->getMessage();
             return false;
+        }
+    }
+
+    /**
+     * Get Selected Data by @param
+     * Function get the records from database table.
+     * @param type $id
+     * @return boolean
+     * @url http://php.net/manual/en/pdostatement.fetch.php
+     */
+    public function read($id = null) {
+        if ($id) {
+            $stmt = $this->db->prepare("SELECT * FROM users WHERE id=:id");
+            $stmt->execute(array(":id" => $id));
+            /* if result execute not empty */
+            if ($stmt->rowCount() > 0) {
+                $result = $stmt->fetch(PDO::FETCH_ASSOC);
+                return $result;
+            } else {
+                return FALSE;
+            }
+        } else {
+            
         }
     }
 
@@ -124,6 +123,20 @@ class Crud {
         } catch (PDOException $e) {
             echo $e->getMessage();
             return false;
+        }
+    }
+
+    /**
+     * Delete user data
+     * @param type $id
+     * @return boolean
+     */
+    public function delete($id) {
+        if ($id) {
+            $stmt = $this->db->prepare("DELETE FROM users WHERE id=:id");
+            $stmt->bindparam(":id", $id);
+            $stmt->execute();
+            return true;
         }
     }
 

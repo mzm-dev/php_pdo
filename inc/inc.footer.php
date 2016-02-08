@@ -19,7 +19,7 @@
 
 
 <footer class="footer">
-    <p>Tutorial : Sample PHP</p>
+    <p>PHP PDO CRUD Tutorial</p>
 </footer>
 </div>
 <!-- /.content -->

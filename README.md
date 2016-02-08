@@ -100,13 +100,11 @@ Fail inc.class.user.php menempatkan fungsi asas CRUD dan fungsi memanggil semua 
 
 function get_all_data($query)
 
-function get_data($id)
-
 function create($param1, $param2, $param3, $paramN)
 
-function update($id, $param1, $param2, $param3, $paramN)
+function read($id)
 
-function view($id)
+function update($id, $param1, $param2, $param3, $paramN)
 
 function delete($id)
 
