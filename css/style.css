@@ -1,14 +1,12 @@
 /*
-@tutorial Sesi "Transfer of technology"
-Penggunaan AppGen - API Manager dan 
-pembangunan API Service dengan mengggunakan
-PHP dan MySQL
-@author 	: Mohamad Zaki Mustafa
-@contact 	: mzm@kpkt.gov.my
-@date           : 17hb Februari 2015
-@location 	: Makmal Komputer, Bahagian Teknologi Maklumat,
-                  Kementerian Kesejahteraan Bandar, Perumahan Dan Kerajaan Tempatan	
-*/
+ * PHP Sample
+ * Collection of Basic programming using PHP and MySQL
+ * @author 	: Mohamad Zaki Mustafa
+ * @contact 	: mohdzaki04@gmail.com
+ * @fb	 	: https://www.facebook.com/zakimedia
+ * @tw	 	: https://twitter.com/mzmfizaki
+ */
+
 /* Space out content a bit */
 body {
     padding-top: 20px;
@@ -17,7 +15,7 @@ body {
 
 
 .header,
-.appgen,
+.mzm,
 .footer {
     padding-right: 15px;
     padding-left: 15px;
@@ -66,11 +64,11 @@ body {
     margin: 30px 0;
 }
 
-/* Supporting appgen content */
-.appgen {
+/* Supporting mzm content */
+.mzm {
     margin: 40px 0;
 }
-.appgen p + h4 {
+.mzm p + h4 {
     margin-top: 28px;
 }
 
@@ -78,7 +76,7 @@ body {
 @media screen and (min-width: 1000px) {
     /* Remove the padding we set earlier */
     .header,
-    .appgen,
+    .mzm,
     .footer {
         padding-right: 0;
         padding-left: 0;

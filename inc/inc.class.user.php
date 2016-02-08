@@ -10,14 +10,14 @@
  */
 
 /*
- * CRUD file
- * @name crud
+ * CRUD file for Table users
+ * @name User
  * @description This is the main class file which contains code for database operations.
  *              so that we won't have to write the same header codes every-time. 
  *              This file contains bootstrap file links. 
  */
 
-class crud {
+class User {
 
     private $db;
 
@@ -37,8 +37,8 @@ class crud {
      * @url http://php.net/manual/en/pdostatement.fetchall.php
      * 
      */
-    public function get_all_data($query) {
-        $stmt = $this->db->prepare($query); //SELECT <field1>, <field2> FROM <table>
+    public function get_all_data() {
+        $stmt = $this->db->prepare("SELECT * FROM users"); //SELECT <field1>, <field2> FROM <table>
         $stmt->execute();
         /* if result execute not empty */
         if ($stmt->rowCount() > 0) {
