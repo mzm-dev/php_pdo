@@ -27,8 +27,8 @@ $this->dbName = "db_php_sample";
 try {
     // Connections are established by creating instances of the PDO base class.    
     // http://php.net/manual/en/pdo.connections.php
-    $DB_con = new PDO("mysql:host={$DB_host};dbname={$DB_name}", $DB_user, $DB_pass);
-    $DB_con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $dbCon = new PDO("mysql:host={$DB_host};dbname={$DB_name}", $DB_user, $DB_pass);
+    $dbCon->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
     echo $e->getMessage();
 }
