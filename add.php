@@ -1,7 +1,8 @@
 <?php
 /*
- * PHP Sample
- * Collection of Basic programming using PHP and MySQL
+ * PHP PDO CRUD Tutorial 
+ * In this tutorial we will see that how to create database 
+ * CRUD operations using Object Oriented concept in PDO
  * @author 	: Mohamad Zaki Mustafa
  * @contact 	: mohdzaki04@gmail.com
  * @fb	 	: https://www.facebook.com/zakimedia
@@ -17,7 +18,7 @@
 /*
  * the database connection
  */
-include_once 'inc/inc.dbconfig.php';
+include_once 'inc/inc.config.php';
 
 
 /*

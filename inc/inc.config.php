@@ -1,8 +1,9 @@
 <?php
 
 /* 
- * PHP Sample
- * Collection of Basic programming using PHP and MySQL
+ * PHP PDO CRUD Tutorial 
+ * In this tutorial we will see that how to create database 
+ * CRUD operations using Object Oriented concept in PDO
  * @author 	: Mohamad Zaki Mustafa
  * @contact 	: mohdzaki04@gmail.com
  * @fb	 	: https://www.facebook.com/zakimedia
@@ -18,17 +19,21 @@
 /**
  * Set Setting 
  */
-$this->dbHost = "localhost";
-$this->dbUser = "root";
-$this->dbPass = "password";
-$this->dbName = "db_php_sample";
+$dbHost = "localhost";
+$dbUser = "root";
+$dbPass = "password";
+$dbName = "db_php_sample";
 
 
 try {
     // Connections are established by creating instances of the PDO base class.    
     // http://php.net/manual/en/pdo.connections.php
-    $dbCon = new PDO("mysql:host={$DB_host};dbname={$DB_name}", $DB_user, $DB_pass);
+    $dbCon = new PDO("mysql:host={$dbHost};dbname={$dbName}", $dbUser, $dbPass);
     $dbCon->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
     echo $e->getMessage();
 }
+
+include_once 'inc.class.user.php';
+
+$crud = new Crud($dbCon);

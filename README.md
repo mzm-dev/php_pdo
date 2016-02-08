@@ -1,8 +1,9 @@
 # Basic PHP
 
-In this tutorial we will see that how to create database CRUD operations using Object Oriented concept in PDO.
-Here I used Bootstrap framework for front-end design.
-The MySQL database operations will done by PDO and OOP
+Dalam tutorial ini, kita akan lihat bagaimana mewujudkan operasi 
+Pangkalan Data CRUD MySQL dengan menggunakan konsep Berorientasikan Objek (_OO - Object Oriented_) PHP dan PDO.
+Dalam menghasilkan rekaan _front-end_, tutorial ini menggunakan _Bootstrap framework_.
+
 
 
 # Database & Table 
@@ -38,7 +39,7 @@ INSERT INTO `users` VALUES (2, 'Nurul Annisa Anuar','annisa@gmail.com','01234567
 INSERT INTO `users` VALUES (3, 'Saifullah Poniman','saifullah@gmail.com','0133456789');
 INSERT INTO `users` VALUES (4, 'Mohd Salleh Daim','salled.daim@gmail.com','0143456789');
 
-``
+```
 
 # Directory
 
@@ -66,15 +67,10 @@ inc/
    --inc.footer.php
    --inc.header.php
    --inc.main.php  
-users/
-   --index.php
-   --add.php
-   --edit.php
-   --view.php
-profiles/
-   --index.php
-   --add.php
-   --edit.php
-   --view.php
+index.php
+add.php
+edit.php
+view.php
+
 
 ```
