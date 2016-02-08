@@ -1,0 +1,92 @@
+/*
+@tutorial Sesi "Transfer of technology"
+Penggunaan AppGen - API Manager dan 
+pembangunan API Service dengan mengggunakan
+PHP dan MySQL
+@author 	: Mohamad Zaki Mustafa
+@contact 	: mzm@kpkt.gov.my
+@date           : 17hb Februari 2015
+@location 	: Makmal Komputer, Bahagian Teknologi Maklumat,
+                  Kementerian Kesejahteraan Bandar, Perumahan Dan Kerajaan Tempatan	
+*/
+/* Space out content a bit */
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.header,
+.appgen,
+.footer {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+/* Custome Table thead color */
+.table-bordered.table-highlight {
+    border-top-color: #2c2c2c;    
+}
+
+.table thead tr:first-child {
+    background-color: #363636;    
+}
+.table thead tr:first-child th {
+    border: 1px solid #2c2c2c;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Customize container */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+/* Supporting appgen content */
+.appgen {
+    margin: 40px 0;
+}
+.appgen p + h4 {
+    margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 1000px) {
+    /* Remove the padding we set earlier */
+    .header,
+    .appgen,
+    .footer {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+
+}
+

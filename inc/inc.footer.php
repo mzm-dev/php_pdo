@@ -1,0 +1,32 @@
+<?php
+
+/* 
+ * PHP Sample
+ * Collection of Basic programming using PHP and MySQL
+ * @author 	: Mohamad Zaki Mustafa
+ * @contact 	: mohdzaki04@gmail.com
+ * @fb	 	: https://www.facebook.com/zakimedia
+ * @tw	 	: https://twitter.com/mzmfizaki
+ */
+
+/*
+ * @name Footer page
+ * @description This footer.php file will be included at the end of all files 
+ *              so that we won't have to write the same footer codes every-time. 
+ */
+?>
+
+
+<footer class="footer">
+    <p>Tutorial : Sample PHP</p>
+</footer>
+</div>
+<!-- /.content -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js" ></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/function.js" type="text/javascript"></script>
+</body>
+</html>
