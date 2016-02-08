@@ -74,3 +74,40 @@ view.php
 
 
 ```
+
+# Config
+
+Fail inc.config.php menyimpan parameter yang kekal atau perlu diubah mengikut konfigurasi komputer anda
+
+```php
+
+/**
+ * Set Setting 
+ * Please change this parameter follow yourselft setting
+ */
+$dbHost = "localhost";
+$dbUser = "root";
+$dbPass = "password";
+$dbName = "db_php_sample";
+
+```
+
+# CRUD Class
+
+Fail inc.class.user.php menempatkan fungsi asas CRUD dan fungsi memanggil semua data dan data terpilih.
+
+```php
+
+function get_all_data($query)
+
+function get_data($id)
+
+function create($param1, $param2, $param3, $paramN)
+
+function update($id, $param1, $param2, $param3, $paramN)
+
+function view($id)
+
+function delete($id)
+
+```
