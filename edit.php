@@ -27,10 +27,10 @@ include_once 'inc/inc.config.php';
 include_once 'inc/inc.header.php';
 ?>
 
-<div class="row appgen">
+<div class="row mzm">
     <?php
     /* Get all value of POST */
-    if (isset($_POST['btn-update']) && $_POST['btn-update'] == "btn-update") {
+    if (isset($_POST['btn-update'])) {
         $id = $_GET['edit_id'];
         $fname = $_POST['fname'];
         $femail = $_POST['femail'];

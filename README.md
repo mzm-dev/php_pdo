@@ -63,10 +63,9 @@ css/
    --style.css
 inc/
    --inc.dbconfig.php
-   --inc.class.user.php  
+   --inc.class.crud.php  
    --inc.footer.php
    --inc.header.php
-   --inc.main.php  
 index.php
 add.php
 edit.php
@@ -94,7 +93,7 @@ $dbName = "db_php_sample";
 
 # CRUD Class
 
-Fail inc.class.user.php menempatkan fungsi asas CRUD dan fungsi memanggil semua data dan data terpilih.
+Fail inc.class.crud.php menempatkan fungsi asas CRUD dan fungsi memanggil semua data dan data terpilih.
 
 ```php
 

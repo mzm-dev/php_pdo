@@ -27,7 +27,7 @@ include_once 'inc/inc.config.php';
 include_once 'inc/inc.header.php';
 ?>
 
-<div class="row appgen">
+<div class="row mzm">
     <?php
     /* Get view_id value */
     if (isset($_GET['view_id']) && is_numeric($_GET['view_id'])) {
