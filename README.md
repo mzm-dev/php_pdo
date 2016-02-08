@@ -109,3 +109,9 @@ function update($id, $param1, $param2, $param3, $paramN)
 function delete($id)
 
 ```
+
+# Download
+
+Download the script by clicking following link and try it in your projects.
+
+[Download](https://github.com/mzm-dev/php_pdo/archive/master.zip).
