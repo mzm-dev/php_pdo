@@ -46,7 +46,7 @@ include_once 'inc/inc.header.php';
     /* Get edit_id value */
     if (isset($_GET['edit_id'])) {
         $id = $_GET['edit_id'];
-        extract($crud->get_data_user($id));
+        extract($crud->get_data($id));
     }
     ?>
     <h3 class="text-center"><?php echo 'Update Record' ?></h3>

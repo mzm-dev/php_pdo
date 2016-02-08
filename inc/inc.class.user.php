@@ -96,4 +96,35 @@ class Crud {
         }
     }
 
+    /**
+     * Update Function
+     * Functions are in try/catch block to handle exceptions. 
+     * @param type $id
+     * @param type $fname
+     * @param type $femail
+     * @param type $fphone
+     * @return boolean
+     * @ref http://php.net/manual/en/pdostatement.execute.php
+     * @ref http://php.net/manual/en/pdostatement.bindparam.php
+     */
+    public function update($id, $fname, $femail, $fphone) {
+        try {
+            $stmt = $this->db->prepare("UPDATE users SET 
+                name=:name, 
+                email=:email, 
+                phone=:phone
+             WHERE id=:id");
+            $stmt->bindparam(":name", $fname);
+            $stmt->bindparam(":email", $femail);
+            $stmt->bindparam(":phone", $fphone);
+            $stmt->bindparam(":id", $id);
+            $stmt->execute();
+
+            return true;
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+            return false;
+        }
+    }
+
 }

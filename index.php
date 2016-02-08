@@ -10,7 +10,7 @@
  */
 
 /*
- * @name Main page
+ * @name Index page
  * @description this file will show the records from the mysql database. 
  */
 ?>
@@ -27,13 +27,42 @@ include_once 'inc/inc.config.php';
 include_once 'inc/inc.header.php';
 ?>
 
-<div class="row mzm">
-    <?php
-    /*
-     * replace include_once with other file
-     */
-    include_once 'inc/inc.main.php';
-    ?>
+<div class="row mzm">    
+    <div class="btn-group pull-right" role="group" aria-label="...">
+        <a class="btn btn-info" href="add.php">Add Data</a>  
+    </div>
+    <table id="index_users" class="table table-striped table-bordered table-highlight table-hover">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Email ID</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            #Query Statement Select All from users
+            $query = "SELECT * FROM users";
+
+            $users = $crud->get_all_data($query);
+            ?>
+            <?php //print_r($results) ?>
+            <?php foreach ($users as $user): ?>
+                <tr id="user-<?php echo $user['id']; ?>">
+                    <td><?php echo $user['id']; ?></td>
+                    <td><?php echo $user['name']; ?></td>                
+                    <td><?php echo $user['phone']; ?></td>
+                    <td><?php echo $user['email']; ?></td>
+                    <td>
+                        <a class="btn btn-info btn-sm" href="edit.php?edit_id=<?php print($user['id']); ?>">Edit Form</a>                        
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+
+        </tbody>
+    </table>
 
 </div>
 

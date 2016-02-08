@@ -1,18 +1,18 @@
 # Basic PHP
 
 Dalam tutorial ini, kita akan lihat bagaimana mewujudkan operasi 
-Pangkalan Data CRUD MySQL dengan menggunakan konsep Berorientasikan Objek (_OO - Object Oriented_) PHP dan PDO.
+Pangkalan Data CRUD (CREATE, READ, UPDATE, DELETE) MySQL dengan menggunakan konsep Berorientasikan Objek (_OO - Object Oriented_) PHP dan PDO.
 Dalam menghasilkan rekaan _front-end_, tutorial ini menggunakan _Bootstrap framework_.
 
 
 
 # Database & Table 
 
-Our database and table will be as follow 
+Wujudkan _database_ dan _table_ seperti dibawah
 
 ```php
 --
--- Database: `db_api`
+-- Database: `db_php_sample`
 --
 
 -- --------------------------------------------------------
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 
 -- 
--- Dumping data for table `bangsa`
+-- Dumping data for table `users`
 -- 
 
 INSERT INTO `users` VALUES (1, 'Nur Azyani bin Abdul Manaf','azyani@gmail.com','0113456789');
@@ -43,7 +43,7 @@ INSERT INTO `users` VALUES (4, 'Mohd Salleh Daim','salled.daim@gmail.com','01434
 
 # Directory
 
-Our directory will be as follow 
+Direktori fail projek seperti dibawah 
 
 ```php
 

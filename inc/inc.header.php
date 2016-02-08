@@ -24,7 +24,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta content="Penggunaan AppGen - API Manager dan pembangunan API Service dengan mengggunakan PHP dan MySQL" name="description">        
-        <title>AppGen - Web Service API</title>
+        <title>PHP PDO CRUD Tutorial</title>
         <!-- Bootstrap -->
         <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen"> 
         <!-- Custome -->

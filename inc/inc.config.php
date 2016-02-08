@@ -18,6 +18,7 @@
 
 /**
  * Set Setting 
+ * Please change this parameter follow yourselft setting
  */
 $dbHost = "localhost";
 $dbUser = "root";
